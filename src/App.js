@@ -3,9 +3,10 @@ import './App.css';
 import * as axios from "axios";
 
 const getUsers = (currentPage = 1, pageSize = 10) => {
-        return axios.get(`sources.json`).then(response => {
+        return axios.get(`./sources.json`).then(response => {
             console.log(response);
         })
+        
 }
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+          TesT merge
         </p>
         <a
           className="App-link"
